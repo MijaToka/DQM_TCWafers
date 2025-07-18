@@ -1,0 +1,31 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: DQM_Global_Module_Template
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Mijail
+    family-names: Tokarev Peñaloza
+    email: mijail.tokarev@ug.uchile.cl
+    affiliation: LLR
+identifiers:
+  - type: url
+    value: 'https://github.com/MijaToka/DQM_TCWafers'
+    description: DQM Global Template Generate Repo
+repository-code: 'https://github.com/MijaToka/DQM_TCWafers'
+abstract: >-
+  This repository handles the creation of TC wafer templates for the HGCal DQM.
+
+  The TC are made via a jupyter notebook generateTCwafer.ipynb where the TC's 
+  are defined as rombuses in the sequence given by the WaferCellMapTraces.txt file. 
+  9The ordering of these cells was chosen by visual inspection thanks to the 
+  generateTCvisualization.ipynb which holds the scripts to read this input file and 
+  process it to display the module so that the value of the cell corresponds to the
+  value of the "Global TC count", ie the index asigned to the TC by the Cell indexer.
+  This file also contains python sketches of the Cell and Module indexer for the TC
+  and an ESProducer sketch that later was included into CMSSW.
+date-released: '2025-07-31'
